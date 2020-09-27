@@ -1,0 +1,143 @@
+@import "./base.module.scss";
+@import "./spacing.module.scss";
+@import "./color.scss";
+
+.main {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 720px;
+  flex-direction: column; // extend 가능한지 보자.
+}
+
+.first_row {
+  justify-content: space-between;
+  background: getColor("lightGrey3");
+  & > div {
+    height: 160px;
+    border-radius: 12px;
+    margin: 4px;
+  }
+  .wrapper1 {
+    align-content: stretch;
+    width: 200px;
+    background: getColor("yellow3");
+    flex-direction: column;
+    & > div {
+      margin: 4px;
+      flex: 1 0 0;
+      border-radius: 5px;
+    }
+  }
+  .wrapper2 {
+    width: 140px;
+    background: getColor("red3");
+    align-content: stretch;
+    & > div {
+      flex: 1 0 0;
+      border-radius: 4px;
+    }
+  }
+  .wrapper3 {
+    width: 160px;
+    background: getColor("blue2");
+    flex-direction: column;
+    align-content: stretch;
+    & > div {
+      flex: 1 0 0;
+      border-radius: 12px;
+      margin: 4px;
+    }
+  }
+  .wrapper4 {
+    width: 160px;
+    background: getColor("pink");
+    flex-wrap: wrap;
+    & > div {
+      border-radius: 8px;
+      margin: 2px;
+    }
+  }
+}
+
+.second_row {
+  justify-content: space-between;
+  .wrapper1 {
+    flex-direction: column;
+    background: getColor("black2");
+    border-radius: 8px;
+    & > button {
+      margin: 5px;
+    }
+  }
+  .wrapper2 {
+    flex-direction: column;
+    background: getColor("yellow2");
+    justify-content: space-between;
+    border-radius: 12px;
+    & > button {
+      margin: 4px 6px;
+      flex: 1 0 auto;
+    }
+  }
+}
+@mixin third_row($index) {
+  margin-top: $index * 20px;
+  padding: 0;
+  border-radius: 6px;
+  flex-direction: column;
+  @if $index % 3 == 0 {
+    background: getColor("grey3");
+  }
+  @if $index % 3 == 1 {
+    background: getColor("grey4");
+  }
+  @if $index % 3 == 2 {
+    background: getColor("grey5");
+  }
+  & > div {
+    box-shadow: ($index % 3) * 4 + 2px ($index % 3) * 3 + 1px 5px #44444460;
+  }
+}
+
+@for $i from 1 through 15 {
+  .third_row_#{$i} {
+    @include third_row($i);
+  }
+}
+
+.third_wrapper1 {
+  background: rgba(0, 0, 0, 0.3);
+  & > button {
+    margin: 5px;
+    flex: 1 0 auto;
+  }
+}
+.third_wrapper2 {
+  background: getColor("yellow4");
+  & > button {
+    margin: 5px;
+    flex: 1 0 auto;
+    height: 100px;
+  }
+}
+.third_wrapper3 {
+  background: getColor("blue2");
+  border-radius: 5px;
+  & > button {
+    margin: 5px;
+    flex: 1 0 0;
+  }
+}
+
+.border_lightGrey2_1 {
+  border: 1px solid getColor("lightGrey2");
+}
+.border_lightGrey4_1 {
+  border: 1px solid getColor("lightGrey4");
+}
+.border_green_1 {
+  border: 1px solid getColor("green");
+}
+.border_orange_1 {
+  border: 1px solid getColor("orange");
+}

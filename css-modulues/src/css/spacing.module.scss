@@ -1,0 +1,62 @@
+$spacing-sizes: (
+  0: 0px,
+  2: 2px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  8: 8px,
+  10: 10px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+  24: 24px,
+  28: 28px,
+  32: 32px,
+);
+
+@each $name, $value in $spacing-sizes {
+  .p_#{$name} {
+    padding: $value;
+  }
+}
+@each $name, $value in $spacing-sizes {
+  .pl_#{$name} {
+    padding-left: $value;
+  }
+}
+@each $name, $value in $spacing-sizes {
+  .pt_#{$name} {
+    padding-top: $value;
+  }
+}
+@each $name, $value in $spacing-sizes {
+  .pb_#{$name} {
+    padding-bottom: $value;
+  }
+}
+@each $name, $value in $spacing-sizes {
+  .py_#{$name} {
+    @extend .pt_#{$name};
+    @extend .pb_#{$name};
+  }
+}
+@each $name, $value in $spacing-sizes {
+  .m_#{$name} {
+    margin: $value;
+  }
+}
+@each $name, $value in $spacing-sizes {
+  .mr_#{$name} {
+    margin-right: $value;
+  }
+}
+@each $name, $value in $spacing-sizes {
+  .mt_#{$name} {
+    margin-top: $value;
+  }
+}
+@each $name, $value in $spacing-sizes {
+  .mb_#{$name} {
+    margin-bottom: $value;
+  }
+}

@@ -1,0 +1,34 @@
+.box {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+}
+.flex {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  .column {
+    flex-direction: column;
+  }
+  .justify-sb {
+    justify-content: space-between;
+  }
+}
+
+.flex_110 {
+  flex: 1 1 0;
+}
+.flex_10a {
+  flex: 1 0 auto;
+}
+.flex_01f {
+  flex: 0 1 100%;
+}
+
+.text {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+}

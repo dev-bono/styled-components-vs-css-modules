@@ -1,0 +1,39 @@
+@use 'sass:map';
+
+$colors: (
+  "transparent": transparent,
+  "white": #ffffff,
+  "black1": #000000,
+  "black2": #333333,
+  "grey1": #555555,
+  "grey2": #777777,
+  "grey3": #999999,
+  "grey4": #bbbbbb,
+  "grey5": #dddddd,
+  "grey6": #444444,
+  "lightGrey1": #d8d8d8,
+  "lightGrey2": #e8e8e8,
+  "lightGrey3": #f2f2f2,
+  "lightGrey4": #f6f6f6,
+  "lightGrey5": #f9f9f9,
+  "yellow1": #eed201,
+  "yellow2": #efd101,
+  "yellow3": #ffb921,
+  "yellow4": #fff1c4,
+  "yellow5": #eed811,
+  "red1": #ff2f2f,
+  "red2": #ff4e4e,
+  "red3": #da5333,
+  "red4": #f86071,
+  "blue1": #1c68ff,
+  "blue2": #4167b2,
+  "blue3": #33b,
+  "pink": lightpink,
+  "green": lightgreen,
+  "orange": orange,
+  "lightYellow": lightyellow,
+);
+
+@function getColor($color) {
+  @return map.get($colors, $color);
+}

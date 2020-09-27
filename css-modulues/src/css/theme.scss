@@ -1,0 +1,154 @@
+@use "sass:map";
+@import "./color.scss";
+
+@each $name, $value in $colors {
+  .#{$name} {
+    color: $value;
+  }
+}
+@each $name, $value in $colors {
+  .bg_#{$name} {
+    background: $value;
+  }
+}
+
+.btn_transparent1_black1 {
+  background-color: getColor("transparent");
+  border: 1px solid getColor("black1");
+  border-radius: 4px;
+}
+.btn_transparent2_lightGrey2 {
+  background-color: getColor("transparent");
+  border: 1px solid getColor("lightGrey2");
+  border-radius: 5px;
+}
+.btn_transparent_yellow1 {
+  background-color: getColor("transparent");
+  border: 1px solid getColor("yellow1");
+  border-radius: 5px;
+}
+.btn_transparent_yellow2 {
+  background-color: getColor("transparent");
+  border: 1px solid getColor("yellow2");
+  border-radius: 10px;
+}
+.btn_black1_white {
+  background-color: getColor("black1");
+  border: 1px solid getColor("white");
+  border-radius: 2px;
+}
+.btn_black1_red2 {
+  background-color: getColor("black1");
+  border: 1px solid getColor("red2");
+  border-radius: 8px;
+}
+.btn_black1_orange {
+  background-color: getColor("black1");
+  border: 1px solid getColor("orange");
+  border-radius: 24px;
+}
+.btn_lightGrey1_black2 {
+  background-color: getColor("lightGrey1");
+  border: 1px solid getColor("black2");
+  border-radius: 3px;
+}
+.btn_lightGrey3_blue3 {
+  background-color: getColor("lightGrey3");
+  border: 1px solid getColor("blue3");
+  border-radius: 4px;
+}
+.btn_lightGrey3_white {
+  background-color: getColor("lightGrey3");
+  border: 1px solid getColor("white");
+  border-radius: 5px;
+}
+.btn_white_lightGrey1 {
+  background-color: getColor("white");
+  border: 1px solid getColor("lightGrey1");
+  border-radius: 5px;
+}
+.btn_white_black2 {
+  background-color: getColor("white");
+  border: 1px solid getColor("black2");
+  border-radius: 5px;
+}
+.btn_white_lightGrey2 {
+  background-color: getColor("white");
+  border: 1px solid getColor("lightGrey2");
+  border-radius: 6px;
+}
+.btn_red4_blue2 {
+  background-color: getColor("red4");
+  border: 1px solid getColor("blue2");
+  border-radius: 8px;
+}
+.btn_yellow1_blue2 {
+  background-color: getColor("yellow1");
+  border: 1px solid getColor("blue2");
+  border-radius: 6px;
+}
+.btn_yellow1_black2 {
+  background-color: getColor("yellow1");
+  border: 1px solid getColor("black2");
+  border-radius: 4px;
+}
+.btn_yellow1_lightGrey3 {
+  background-color: getColor("yellow1");
+  border: 1px solid getColor("lightGrey3");
+  border-radius: 12px;
+}
+.btn_yellow1_green {
+  background-color: getColor("yellow1");
+  border: 1px solid getColor("green");
+  border-radius: 3px;
+}
+.btn_yellow3_black2 {
+  background-color: getColor("yellow3");
+  border: 1px solid getColor("black2");
+  border-radius: 3px;
+}
+.btn_pink_lightGrey04 {
+  background-color: getColor("pink");
+  border: 1px solid getColor("lightGrey4");
+  border-radius: 4px;
+}
+.btn_green_transparent {
+  background-color: getColor("green");
+  border: 1px solid getColor("transparent");
+  border-radius: 5px;
+}
+.btn_red3_transparent {
+  background-color: getColor("red3");
+  border: 1px solid getColor("transparent");
+  border-radius: 2px;
+}
+.btn_red4_transparent {
+  background-color: getColor("red4");
+  border: 1px solid getColor("transparent");
+  border-radius: 4px;
+}
+.btn_pink_green {
+  background-color: getColor("pink");
+  border: 1px solid getColor("green");
+  border-radius: 4px;
+}
+.btn_blue1_lightGrey2 {
+  background-color: getColor("blue1");
+  border: 1px solid getColor("lightGrey2");
+  border-radius: 8px;
+}
+.btn_blue2_lightGrey1 {
+  background-color: getColor("blue2");
+  border: 1px solid getColor("lightGrey1");
+  border-radius: 6px;
+}
+.btn_blue3_lightGrey3 {
+  background-color: getColor("blue3");
+  border: 1px solid getColor("lightGrey3");
+  border-radius: 2px;
+}
+.btn_blue4_lightGrey3 {
+  background-color: getColor("blue4");
+  border: 1px solid getColor("lightGrey3");
+  border-radius: 8px;
+}
